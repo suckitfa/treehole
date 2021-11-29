@@ -1,0 +1,12 @@
+<view>
+  <view class="first">
+    <input type="text" placeholder="用户名/邮箱/手机号" class="input"/>
+  </view>
+  <view class="second">
+    <input type="text" placeholder="登入密码" class="input" type="safe-password"/>
+  </view>
+  <view class="click">登入</view>
+  <view>
+  <text class="cha" bindtap="bindViewTap">还没有账号?点我注册</text>
+  </view>
+</view>

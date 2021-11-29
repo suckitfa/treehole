@@ -1,0 +1,26 @@
+<!--pages/squares/squares.wxml-->
+<view>
+  <scroll-view class="scbg" scroll-y="true">
+    <view class="box">
+      <view class="firstblock">
+        <image class="avatar" src="/images/like.png"></image>
+        <view class="person">
+          <view class="username">
+            <text class="showname">帅哥唐</text>
+          </view>
+          <view class="usertime">
+            <text class="showtime">2021-10-11 21:41:52</text>
+          </view>
+        </view>
+      </view>
+      <view class="secondblock">
+        <text class="content">树洞内树洞内树洞内树洞内树洞内树洞内树洞内树洞内容</text>
+      </view>
+      <view class="thirdblock">
+        <image class="like" src="/images/likeplus.png"></image>
+        <text class="num">100</text>
+      </view>
+    </view>
+  </scroll-view>
+  <include src="/pages/bottommenu/bottommenu"/>
+</view>

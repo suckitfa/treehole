@@ -1,0 +1,11 @@
+<view class="textarea">
+  <textarea 
+    placeholder="发条树洞吧 ~" 
+    class="text-input" 
+    placeholder-style="color:#888;font-size:38rpx;"
+    maxlength="-1"
+    bindinput="handleInputChange"
+
+  ></textarea>
+  <view class="click" bindtap="handleClickToPublish">发布</view>
+</view>

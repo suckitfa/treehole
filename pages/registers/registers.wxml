@@ -1,0 +1,22 @@
+<!-- 容器组件 -->
+<view >
+  <view class='first'>
+    <input placeholder='用户名' placeholder-class='plas' class='input' type='text' bindinput="usernameInput"/> 
+  </view>
+  <view class='second'>
+    <input placeholder='手机号' placeholder-class='plas' class='input' type='number' bindinput="phonenumInput"/> 
+  </view>
+  <view class='second'>
+    <input placeholder='用户密码' placeholder-class='plas' class='input' type='safe-password'
+    bindinput="pwdInput" /> 
+  </view>
+  <view class='second'>
+    <input placeholder='确认密码' placeholder-class='plas' class='input' type='safe-password'
+      bindinput="pwdackInput"
+    /> 
+  </view>
+  <view class="click" bindtap="handleLogin" bindtap="handleLogin">注册</view>
+  <view class="cha" bindtap="bindViewTap">
+  <text >已有账号，点我登入</text>
+  </view>
+</view>
