@@ -11,7 +11,7 @@ Page({
   next: function(e) {
     console.log("userInfo", getApp().globalData.userInfo)
     wx.redirectTo({
-      url: '/pages/login/login'
+      url: '/pages/logins/logins'
     })
   },
 
