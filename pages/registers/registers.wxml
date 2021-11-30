@@ -15,7 +15,7 @@
       bindinput="pwdackInput"
     /> 
   </view>
-  <view class="click" bindtap="handleLogin" bindtap="handleLogin">注册</view>
+  <view class="click" bindtap="handleRegister" >注册</view>
   <view class="cha" bindtap="bindViewTap">
   <text >已有账号，点我登入</text>
   </view>

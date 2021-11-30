@@ -82,13 +82,22 @@ Page({
       url: '../logins/logins',
     })
   },
-  handleLogin() {
+  handleRegister(e) {
     const self = this;
-    console.log(this)
-    console.log("this.data = ",this.data)
-    wx.showModal({
-      cancelColor: 'red',
-      title:"fuck you"
-    })
+    const url = getApp().globalData.server;
+    console.log(getApp().userInfo)
+    // wx.request({
+    //   url,
+    //   data:{
+    //     username:self.data.username,
+    //     phone:self.data.phonenumber,
+    //     password:self.data.password,
+    //     password_again:self.data.passwordack,
+    //     face_url:getApp().globalData.userInfo.avatarUrl,
+    //   },
+    //   header:{
+
+    //   }
+    // })
   }
 })

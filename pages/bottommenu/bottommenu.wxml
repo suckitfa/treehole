@@ -1,11 +1,11 @@
 <view class="bottomrow">
-<view class="bottomtab">
-  <text class="bottomtabText">广场</text>
+<view class="bottomtab" bindtap="firstSelect">
+  <text class="bottomtabText" style="color:{{firstColor}};">广场</text>
 </view>
-<view class="bottomtab">
+<view class="bottomtab" bindtap="secondSelect">
   <image  src="/images/add.png" class="bottomImg"></image>
 </view>
-<view class="bottomtab">
-  <text class="bottomtabText">我的</text>
+<view class="bottomtab" bindtap="thirdSelect">
+  <text class="bottomtabText" style="color:{{secondColor}};">我的</text>
 </view>
 </view>

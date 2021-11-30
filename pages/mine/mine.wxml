@@ -1,0 +1,19 @@
+<view class="scbg">
+<view class="box">
+<view class="firstblock">
+  <image class="avatar" src="/images/add.png"></image>
+  <text class="username">帅哥张</text>
+</view>
+<view class="secondblock">
+  <text class="content">这个一个条树洞内容</text>
+</view>
+  <view class="thirdblock">
+    <view class="likenum">
+      <image src="/images/likeplus.png" class="like"></image>
+      <text class="num">12</text>
+    </view>
+    <button class="delbtn">删除</button>
+  </view>
+</view>
+ <include src="/pages/bottommenu/bottommenu"/>
+</view>

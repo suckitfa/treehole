@@ -1,12 +1,17 @@
 <!--pages/squares/squares.wxml-->
 <view>
   <scroll-view class="scbg" scroll-y="true">
-    <view class="box">
+    <block wx:for="{{dataList}}" 
+        wx:for-item="item" 
+        wx:for-index="id" 
+        wx:key="unique"
+      >
+      <view class="box">
       <view class="firstblock">
-        <image class="avatar" src="/images/like.png"></image>
+        <image class="avatar" src="{{item.avatar}}"></image>
         <view class="person">
           <view class="username">
-            <text class="showname">帅哥唐</text>
+            <text class="showname">{{item.username}}</text>
           </view>
           <view class="usertime">
             <text class="showtime">2021-10-11 21:41:52</text>
@@ -14,13 +19,14 @@
         </view>
       </view>
       <view class="secondblock">
-        <text class="content">树洞内树洞内树洞内树洞内树洞内树洞内树洞内树洞内容</text>
+        <text class="content">{{item.content}}</text>
       </view>
       <view class="thirdblock">
         <image class="like" src="/images/likeplus.png"></image>
-        <text class="num">100</text>
+        <text class="num">{{item.total_likes}}</text>
       </view>
     </view>
+    </block>
   </scroll-view>
   <include src="/pages/bottommenu/bottommenu"/>
 </view>
