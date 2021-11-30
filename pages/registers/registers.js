@@ -77,8 +77,9 @@ Page({
   onShareAppMessage: function () {
 
   },
+  
   bindViewTap() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../logins/logins',
     })
   },

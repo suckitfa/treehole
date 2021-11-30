@@ -64,7 +64,7 @@ Page({
 
   },
   bindViewTap() {
-    wx.navigateTo({
+    wx.redirectTo({
       url: '../registers/registers',
     })
   }

@@ -1,19 +1,25 @@
-<view class="scbg">
-<view class="box">
-<view class="firstblock">
-  <image class="avatar" src="/images/add.png"></image>
-  <text class="username">帅哥张</text>
-</view>
-<view class="secondblock">
-  <text class="content">这个一个条树洞内容</text>
-</view>
-  <view class="thirdblock">
-    <view class="likenum">
-      <image src="/images/likeplus.png" class="like"></image>
-      <text class="num">12</text>
+<scroll-view class="scbg" scroll-y="true">
+  <view class="personalInfo">
+    <view class="deco">
+    <open-data class="ava" type="userAvatarUrl"></open-data>
     </view>
-    <button class="delbtn">删除</button>
+    <open-data class="nn" type="userNickName"></open-data>
   </view>
-</view>
- <include src="/pages/bottommenu/bottommenu"/>
-</view>
+  <view class="box">
+  <!-- secondblock -->
+    <view class="sencondblock">
+      <text class="content">{{content}}</text>
+      <view class="tel">
+        <text class="showtime">{{timestamp}}</text>
+      </view>
+    </view>
+    <view class="thirdblock">
+    <view class="combination">
+      <image class="like" src="/images/like.png"></image>
+      <view class="num">{{num}}</view>
+    </view>
+    <view class="del" bindtap="handleDelete">删除</view>
+    </view>
+  </view>
+</scroll-view>
+<include src="/pages/bottommenu/bottommenu" />
